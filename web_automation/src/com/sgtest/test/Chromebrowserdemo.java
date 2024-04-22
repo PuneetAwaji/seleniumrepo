@@ -20,6 +20,7 @@ public class Chromebrowserdemo {
 		try {
 			obrowser.get("http://localhost/login.do");
 			obrowser.findElement(By.id("username")).sendKeys("admin");
+			obrowser.findElement(By.xpath("//input[@name='pwd']")).sendKeys("manager");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
